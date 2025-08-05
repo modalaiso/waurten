@@ -11,14 +11,16 @@
     outline:none;
 }
 .short-input{
-    width:15px;
+    width:20px;
 }
 .mm-input{
-    width: 25px;
-    text-align:center;
+    width:30px;
 }
 .long-input{
-    width:40px;
+    width:45px;
+}
+.short-input,.mm-input,.long-input{
+    text-align:center;
 }
 input[type="text"]{
     font-size:0.8em;

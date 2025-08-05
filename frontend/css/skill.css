@@ -1,0 +1,106 @@
+.skills-selector {
+  font-family:var(--font-family);
+  max-width:440px;
+  margin:20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills-options{
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap: 8px;
+  margin-top:10px;
+}
+
+.skill{
+  padding:6px 12px;
+  border:1px solid var(--dark-bg);
+  background:transparent;
+  cursor:pointer;
+  font-size:14px;
+  transition:0.2s;
+}
+.skill:hover{
+  box-shadow:1.5px 1.5px var(--dark-bg);
+  transition:0.2s;
+}
+
+.skill:active{
+  transform:scale(0.98);
+  box-shadow:inset 1px 1px var(--dark-bg);
+  transition:0.2s;
+}
+
+.skill.selected {
+  background-color: #0f0f0f;
+  color: white;
+  border-color: #0f0f0f;
+}
+
+.skills-selected {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skills-selected .tag {
+  background: #f0f0f0;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.see-more, .see-other, .add-btn {
+  margin-top: 10px;
+  background: transparent;
+  color: #0f0f0f;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.custom-input {
+  padding: 6px 10px;
+  border: 1px solid #0f0f0f;
+  width: 60%;
+  outline:none;
+}
+.skills-selected .tag {
+  background: transparent;
+  color:#0f0f0f;
+  border:1px solid #0f0f0f;
+  padding: 6px 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skills-selected .remove {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #0f0f0f;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0;
+}
+
+.remove{
+    transition: all 0.2s;
+}
+
+.skills-selected .remove:hover {
+  color: #ff3333;
+}
+.hidden-skills{
+  gap: 8px;
+  flex-wrap:wrap;
+  justify-content: center;
+}

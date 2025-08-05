@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../css/auth.css">
         <link rel="stylesheet" href="../../css/step-2.css">
-        <link rel="stylesheet" href="../../css/birthday.css">
+        <link rel="stylesheet" href="../../css/skill.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -31,17 +31,59 @@
                             <circle cx="12" cy="12" r="10"/>
                         </svg>
                     </div>
-                    <label>Quand êtes-vous né ?</label> 
-                    <div class="form-group">
-                        <div class="date-wrapper">
-                            <input type="text" id="birthDay" class="short-input day" placeholder="JJ" maxlength="2" inputmode="numeric">
-                            <span>/</span>
-                            <input type="text" id="birthMonth" class="mm-input day" placeholder="MM" maxlength="2" inputmode="numeric">
-                            <span>/</span>
-                            <input type="text" id="birthYear" class="long-input day" placeholder="AAAA" maxlength="4" inputmode="numeric">
-                        </div>
-                        <small id="birthdateError" class="error-msg">Date invalide</small>
-                    </div>
+                    <label>Vos compétences</label> 
+                    <div class="skills-selector">
+  <div class="skills-options" id="skillsContainer">
+    <!-- Métiers principaux -->
+    <button class="skill">Développeur Frontend</button>
+    <button class="skill">Développeur Backend</button>
+    <button class="skill">Développeur Mobile</button>
+    <button class="skill">Développeur Full Stack</button>
+    <button class="skill">UX Designer</button>
+    <button class="skill">UI Designer</button>
+    <button class="skill">Product Manager</button>
+    <button class="skill">Growth Hacker</button>
+    <button class="skill">SEO Specialist</button>
+    <button class="skill">Social Media Manager</button>
+    <button class="skill">Data Analyst</button>
+    <button class="skill">Ingénieur IA</button>
+    <button class="skill">Webdesigner</button>
+    <button class="skill">Modélisateur 3D</button>
+
+    <!-- Autres métiers masqués -->
+    <div class="hidden-skills" style="display: none;">
+      <button class="skill">Motion Designer</button>
+      <button class="skill">Content Manager</button>
+      <button class="skill">CRM Manager</button>
+      <button class="skill">Cybersecurity Analyst</button>
+      <button class="skill">DevOps Engineer</button>
+      <button class="skill">Admin Système</button>
+      <button class="skill">Développeur Web3</button>
+      <button class="skill">No-code Maker</button>
+      <button class="skill">AI Prompt Engineer</button>
+      <button class="skill">Entrepreneur</button>
+      <button class="skill">Etudiant</button>
+      <button class="skill">Eleve</button>
+    </div>
+  </div>
+
+  <!-- Boutons -->
+  <div class="actions">
+    <button id="toggleButton" class="see-more">Voir plus</button>
+    <button id="otherButton" class="see-other">Autre +</button>
+  </div>
+
+  <!-- Champ personnalisé -->
+  <div id="otherInputContainer" style="display: none; margin-top: 10px;">
+    <input type="text" id="otherInput" placeholder="Écris ton métier personnalisé…" class="custom-input">
+    <button id="addOther" class="add-btn">Ajouter</button>
+  </div>
+
+  <!-- Résumé sélectionné -->
+  <div class="skills-selected" id="skillsSelected"></div>
+  <input type="hidden" name="skills" id="skillsInput" />
+</div>
+
                     <div class="nav-page">
                         <a href="../signup.html" class="nav-link">
                             <button type="button" class="prev">
@@ -73,6 +115,6 @@
                 </form>
             </div>
         </main>
-        <script src="../../js/birthday.js"></script>
+        <script src="../../js/skill.js"></script>
     </body>
 </html>
